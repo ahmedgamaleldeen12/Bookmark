@@ -1,0 +1,148 @@
+/* global Styles */
+*{
+    box-sizing: border-box !important;
+}
+body{
+    background-color: #f7ecde;
+}
+
+.container .top h1{
+    font-family: 'Pacifico', 'cursive';
+    color: #352E28;
+    font-size: 50px;
+    line-height: 60px;
+    word-spacing: 0px;
+    font-weight: 500;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.container .top h1::before{
+    content: "";
+    position: absolute;
+    background-color: #fec260;
+    height: 20%;
+    width: 100%;
+    left: 0px;
+    bottom: 10px;
+    z-index: -1;
+    transition-duration: 350ms;
+    transition-timing-function: ease;
+    transition-delay: 0ms;
+}
+.container .top h1:hover:before{
+    height: 52%;
+}
+.container .top h1::selection{
+    background-color: #fec260;
+    color: #352e28;
+}
+
+.container .lead-content {
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+.container .lead-content h2{
+    font-family: 'Righteous', cursive;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    font-size: 25px;
+    line-height: 30px;
+    word-spacing: 0px;
+    margin-bottom: 8px !important;
+    font-weight: 500;
+    width: fit-content;
+    margin: auto;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container .lead-content h2::selection
+{
+    background-color: rgb(53, 46, 40,0.3);
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}    
+.container .lead-content button {
+    font-family:'PT Sans Caption', sans-serif;
+    border: #fec260 2px solid;
+    border-radius: 15px;
+    color: #352E28;
+    font-weight: 600;
+}
+.container .lead-content button:hover {
+    background-color: rgb(254, 194, 96);
+    color: #fff;
+}
+.container .lead-content .site-name label::selection,
+.container .lead-content .site-url label::selection
+{
+    background-color: rgb(254, 194, 96);
+}
+.container table thead th::selection,
+.container table tbody tr td::selection
+{
+    background-color: rgb(254, 194, 96);
+}
+.btn-visit{
+    color: #fff;
+    background-color: #9eb23b;
+    border-color: #9eb23b;
+}
+.btn-visit:hover{
+    color: #fff;
+    background-color:#8a9e23;
+    border-color: #6e8018;
+}
+.btn-delete{
+    color: #fff;
+    background-color:#eb1d36;
+    border-color:#eb1d36;
+}
+.btn-delete:hover{
+    color: #fff;
+    background-color:#d30820;
+    border-color: #ba081d;
+}
+.box-info {
+    background-color: #0007;
+} 
+.box-conent {
+    width: 500px;
+    z-index: 10;
+}  
+.box-conent p {
+    font-family: "Bree Serif", serif;
+    font-size: 21px;
+    line-height: 1.3;
+    color: #352e28;
+}  
+.rules li {
+    font-size: 18px;
+    padding-top: 10px;
+}
+.rules i {
+    color: #bb4120;
+}  
+.circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+} 
+.circles span:nth-child(1) {
+    background-color: #f15f5d;
+}
+.circles span:nth-child(2) {
+    background-color: #febe2e;
+}
+.circles span:nth-child(3) {
+    background-color: #4db748;
+}  
+.logo {
+    width: 40px;
+}

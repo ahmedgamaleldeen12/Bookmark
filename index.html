@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Seo Meta Methods -->
+    <title>Bookmark</title>
+    <meta name="keywords" content="Online Bookmarks, Bookmark Manager, Favorite Websites, URL Organizer, 
+    Bookmark Collection, Web Favorites, Personal Bookmarks, URL Storage, Website Tracker, Link Repository, 
+    Webpage Bookmarks, Bookmark Vault, Bookmark Organizer, URL Catalog, Webpage Archive, Online Favorites, 
+    Manager, Website Catalog, URL Manager, Webpage Repository, Bookmark Aggregator">
+    <meta name="description" content="A Bookmark Website To keep Your Favorite Websites Links.">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <!-- FavIcon Link -->
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <!-- Fontawesome Library -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- Bootstrap minified file -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- Main Style File -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <main class="container pt-5 text-center">
+        <div class="top">
+            <h1 class="py-2 mb-2">Bookmarker</h1>
+        </div>
+        <div class="lead-content mt-5 px-3 py-4">
+            <h2>
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <div class="site-name px-4 text-start my-3">
+                <label for="siteName" class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                    Site Name
+                </label>
+                <input type="text" name="Site Name" id="siteName" class="form-control from" placeholder="Bookmark Name">
+            </div>
+            <div class="site-url px-4 text-start my-3">
+                <label for="siteURL" class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-link"></i>
+                    Site Name
+                </label>
+                <input type="url" name="Site URL" id="siteURL" class="form-control" placeholder="Website URL">
+            </div>
+            <button type="button" class="btn px-5 my-3" onclick="submit()">Submit</button>
+        </div>
+        <table class="table pt-2 mt-4" style="font-family: 'PT Sans Caption', sans-serif">
+            <thead>
+                <tr>
+                    <th class="text-capitalize">Index</th>
+                    <th class="text-capitalize">Website Name</th>
+                    <th class="text-capitalize">Visit</th>
+                    <th class="text-capitalize">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="myData">
+            </tbody>
+        </table>   
+        <div class="alert"></div> 
+    </main>
+    <!-- alert section just displayed if the user enter in valid data -->
+    <div class="box-info position-absolute start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center d-none">
+    <div class="box-conent bg-white p-4 rounded-2 shadow-lg">
+	    <header class="box-header w-100 d-flex justify-content-between align-items-center mb-4">
+		<div class="circles d-flex">
+			<span class="rounded-circle me-2"></span>
+			<span class="rounded-circle me-2"></span>
+			<span class="rounded-circle me-2"></span>
+		</div>
+		<button class="btn border-0" id="closeBtn">
+			<i class="fa-solid fa-xmark close fs-3"></i>
+		</button>
+	    </header>
+	    <p class="m-0 pb-2">
+		Site Name or Url is not valid, Please follow the rules below :
+	    </p>
+	    <ol class="rules list-unstyled m-0">
+            <li>
+                <i class="fa-regular fa-circle-right p-2"></i>
+                Site name must contain at least 3 characters
+            </li>
+            <li>
+                <i class="fa-regular fa-circle-right p-2"></i>
+                Site URL must be a valid one
+            </li>
+	    </ol>
+    </div>
+    </div> 
+    <script src="JS/main.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
